@@ -1,0 +1,395 @@
+.footerProject {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    width: 100%;
+}
+
+.footerProject form {
+    background-color: white;
+    width: 98%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.footerProject legend {
+    border-bottom: 1px solid black;
+}
+
+.footerProject table tr td {
+    padding: 10px;
+}
+
+.adminButtonFirst {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.adminBTN1,
+.adminBTN2 {
+    padding: 5px 15px;
+    font-size: 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+.adminBTN1:hover,
+.adminBTN2:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.adminButtonClicked {
+    transform: scale(0.99, 0.99);
+    box-shadow: 0 0 0 2px black inset;
+}
+
+.FooterUpdateDiv {
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 98%;
+}
+
+.FooterTop {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.FooterTop div:nth-child(1) {
+    background-color: rgb(195, 0, 255);
+    border-radius: 20px 0 0 0;
+    padding: 10px 30px;
+    font-size: 50px;
+}
+
+.FooterTop div:nth-child(2) {
+    background-color: aqua;
+    font-size: 25px;
+    border-radius: 0 20px 0 0;
+    padding: 10px 20px;
+    width: 100%;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.FooterBottom {
+    background-color: rgb(47, 0, 255);
+    border-radius: 0 0 20px 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.FooterBottomBTN {
+    background-color: red;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+}
+
+.FooterBottom div {
+    margin: auto;
+    padding: 10px 20px;
+    width: 60%;
+    color: white;
+    background-color: rgb(26, 0, 143);
+}
+
+.FooterLoadingDiv {
+    display: none;
+}
+
+.FooterLoading {
+    background-color: rgba(0, 0, 0, 0.377);
+    height: 100%;
+    width: 80%;
+    position: fixed;
+    top: 0px;
+    font-size: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FooterLoadingBefore {
+    background-color: rgba(0, 0, 0, 0.377);
+    height: 100vh;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.FooterLoadingBefore div {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.FooterLoadingBefore .fa-spinner-third {
+    font-size: 50px;
+}
+
+.FooterLoadingBefore div i {
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+@media (max-width: 850px) {
+
+    .FooterEnterName td:first-child,
+    .FooterEnterExprience td:first-child,
+    .FooterUpload td:first-child {
+        font-size: 1.1rem;
+        width: 240px;
+    }
+}
+
+@media (max-width: 683px) {
+
+    .FooterEnterName td:first-child,
+    .FooterEnterExprience td:first-child,
+    .FooterUpload td:first-child {
+        font-size: 1.2rem;
+        width: 240px;
+    }
+
+    .FooterEnterName td p,
+    .FooterEnterName td:nth-child(2) p,
+    .FooterEnterExprience td:nth-child(2) p,
+    .FooterUpload td:nth-child(2) p {
+        font-size: 0.9rem;
+    }
+
+    .FooterUpload td:nth-child(2) input,
+    .FooterEnterName td:nth-child(2) input,
+    .FooterEnterExprience td:nth-child(2) input {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 621px) {
+    .FooterLegend {
+        font-size: 1.3rem;
+    }
+
+    .FooterEnterName td:first-child,
+    .FooterEnterExprience td:first-child,
+    .FooterUpload td:first-child {
+        font-size: 1.1rem;
+    }
+
+    .FooterEnterName td p,
+    .FooterEnterName td:nth-child(2) p,
+    .FooterEnterExprience td:nth-child(2) p,
+    .FooterUpload td:nth-child(2) p {
+        font-size: 0.7rem;
+    }
+
+    .FooterUpload td:nth-child(2) input,
+    .FooterEnterName td:nth-child(2) input,
+    .FooterEnterExprience td:nth-child(2) input {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 525px) {
+    .AddProjectLegend {
+        font-size: 1.1rem;
+    }
+
+    .FooterEnterName td:first-child,
+    .FooterEnterExprience td:first-child,
+    .FooterUpload td:first-child {
+        font-size: 0.9rem;
+        width: 180px;
+    }
+
+    .FooterEnterName td p,
+    .FooterEnterName td:nth-child(2) p,
+    .FooterEnterExprience td:nth-child(2) p,
+    .FooterUpload td:nth-child(2) p {
+        font-size: 0.6rem;
+    }
+
+    .FooterUpload td:nth-child(2) input,
+    .FooterEnterName td:nth-child(2) input,
+    .FooterEnterExprience td:nth-child(2) input {
+        font-size: 0.8rem;
+    }
+
+    #FooterAdminBTN1,
+    #FooterAdminBTN2 {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 393px) {
+
+    .FooterEnterName td:first-child,
+    .FooterEnterExprience td:first-child,
+    .FooterUpload td:first-child {
+        width: 190px;
+        padding: 0;
+    }
+
+    .FooterEnterName td,
+    .FooterEnterExprience td,
+    .FooterUpload td {
+        display: block;
+    }
+
+    .FooterEnterName td p,
+    .FooterEnterName td:nth-child(2) p,
+    .FooterEnterExprience td:nth-child(2) p,
+    .FooterUpload td:nth-child(2) p {
+        font-size: 0.5rem;
+    }
+
+    .FooterUpload td:nth-child(2) input,
+    .FooterEnterName td:nth-child(2) input,
+    .FooterEnterExprience td:nth-child(2) input {
+        width: 85vw;
+    }
+}
+
+@media (max-width: 371px) {
+    .FooterLegend {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .FooterLoading {
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+@media (max-width: 658px) {
+    .FooterTop div:nth-child(1) {
+        font-size: 3rem;
+    }
+
+    .FooterTop div:nth-child(2) {
+        font-size: 1.5rem;
+    }
+
+    .FooterBottomBTN {
+        font-size: 1.1rem;
+    }
+
+    .FooterBottom div {
+        font-size: 1rem;
+        margin: auto 10px;
+    }
+}
+
+@media (max-width: 555px) {
+    .FooterTop div:nth-child(1) {
+        font-size: 2.5rem;
+    }
+
+    .FooterTop div:nth-child(2) {
+        font-size: 1rem;
+    }
+
+    .FooterBottomBTN {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+        height: 30px;
+    }
+
+    .FooterBottom div {
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 378px) {
+    .FooterTop div:nth-child(2) {
+        font-size: 1.2rem;
+    }
+
+    .FooterBottom a {
+        width: 100%;
+    }
+
+    .FooterBottomBTN {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .FooterBottom div {
+        font-size: 1rem;
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .FooterBottom {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 312px) {
+    .FooterTop div:nth-child(2) {
+        font-size: 1.1rem;
+    }
+
+    .FooterBottom a {
+        width: 100%;
+    }
+
+    .FooterBottomBTN {
+        font-size: 0.8rem;
+    }
+
+    .FooterBottom div {
+        font-size: 0.7rem;
+    }
+
+    .FooterBottom {
+        flex-direction: column;
+    }
+
+    .FooterTop {
+        flex-direction: column;
+    }
+
+    .FooterTop div {
+        text-align: center;
+    }
+
+    .FooterTop div:nth-child(1) {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .FooterTop div:nth-child(2) {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 246px) {
+    .FooterBottom div {
+        font-size: 0.6rem;
+    }
+}

@@ -1,0 +1,195 @@
+/* home.css */
+.hero-section {
+    aspect-ratio: 16/6.6;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+}
+
+.hero-image.fade-in {
+    opacity: 1;
+}
+
+.hero-image.fade-out {
+    opacity: 0;
+}
+
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    z-index: 1;
+}
+
+.style_underline {
+    position: relative;
+    display: inline-block;
+}
+
+.style_underline::after {
+    content: "";
+    border-bottom: 2px solid blue;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+
+/* Add this to home.css */
+.why-choose-us {
+    display: flex;
+    align-items: center;
+}
+
+#why_choose_us div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+}
+
+#why_choose_us div:nth-child(2) img {
+    width: 500px;
+    height: 450px;
+}
+
+.custom-list {
+    list-style-type: none;
+    /* Remove default bullets */
+    padding-left: 0;
+    /* Remove padding */
+}
+
+.custom-list li {
+    position: relative;
+    /* Position relative for absolute positioning of the pseudo-element */
+    padding-left: 30px;
+    /* Space for the custom bullet */
+}
+
+.custom-list li::before {
+    content: '';
+    /* Required for pseudo-elements */
+    position: absolute;
+    /* Position the image */
+    left: 0;
+    /* Align it to the left */
+    top: 50%;
+    /* Center it vertically */
+    transform: translateY(-50%);
+    /* Adjust vertical alignment */
+    width: 20px;
+    /* Width of your bullet image */
+    height: 20px;
+    /* Height of your bullet image */
+    background: url('/list_verified.png') no-repeat center center;
+    /* Custom image as bullet */
+    background-size: contain;
+    /* Ensure the image fits */
+}
+
+
+.list-unstyled li {
+    font-size: 1.2rem;
+    /* Adjust font size as needed */
+}
+
+.fas.fa-check-circle {
+    color: green;
+    /* Change the checkmark color if needed */
+}
+
+.dash-list {
+    list-style-type: none;
+    /* Remove default bullets */
+    padding-left: 0;
+    /* Remove left padding */
+}
+
+.dash-list li::before {
+    content: "-";
+    /* Add dash before each list item */
+    margin-right: 8px;
+    /* Space between dash and text */
+    color: inherit;
+    /* Keep the text color */
+    font-weight: bold;
+}
+
+/* Shake animation */
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    
+    25% {
+        transform: translateX(-2px);
+    }
+    
+    50% {
+        transform: translateX(2px);
+    }
+    
+    75% {
+        transform: translateX(-2px);
+    }
+    
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Apply the animation to the button */
+.shake-button {
+    animation: shake 0.5s ease-in-out infinite;
+}
+
+@media (max-width: 992px) {
+    .hero-section {
+        aspect-ratio: 16/8;
+    }
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    .hero-content{
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        aspect-ratio: 16/9;
+    }
+    .hero-content h2 {
+        font-size: 1.3rem;
+    }
+    .hero-content {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        aspect-ratio: 16/10;
+    }
+    .hero-content h2 {
+        font-size: 1rem;
+    }
+}

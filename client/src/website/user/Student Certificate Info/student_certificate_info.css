@@ -1,0 +1,37 @@
+/* styles.css or inside your component's CSS */
+.print-message{
+    display: none;
+}
+@media print {
+    /* Hide everything else except the certificate section */
+    body * {
+        visibility: hidden;
+    }
+
+    .certificate-print-section, .certificate-print-section * {
+        visibility: visible;
+    }
+
+    .print-button {
+        display: none;
+    }
+
+    .print-message {
+        display: block;
+        text-align: center;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    /* Optionally, adjust page margins for printing */
+    @page {
+        size: auto;
+        margin: 20mm;
+    }
+
+    /* Prevent extra spaces and scrolling on the page during print */
+    .certificate-print-section {
+        display: block;
+        padding: 10px;
+    }
+}

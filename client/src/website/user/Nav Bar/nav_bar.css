@@ -1,0 +1,55 @@
+.navbar {
+    background-color: #2090f0; /* Blue color for navbar background */
+    color: #fff;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+.navbar .nav-link {
+    color: #ffffff; /* White for nav links */
+    margin-right: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .nav-link:hover {
+    color: #000000; /* Black on hover */
+}
+
+.navbar-dark .navbar-toggler {
+    background-color: transparent; /* Makes the button background transparent */
+    border-color: rgba(255, 255, 255, 0.1); /* Optional: border color */
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-size: 30px 30px; /* Set size to ensure visibility */
+}
+
+#footer_brand_name_link {
+    color: #fff;
+}
+
+#footer_brand_name_link:hover {
+    color: #2090f0; /* Blue on hover */
+}
+
+.popup {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.popup::after {
+    content: "";
+    position: absolute;
+    right: 75%;
+    top: -16px; 
+    border-width: 8px; /* Size of the arrow */
+    border-style: solid;
+    border-color: transparent transparent white transparent; /* Triangle pointing up */
+}

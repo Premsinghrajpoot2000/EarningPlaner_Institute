@@ -1,0 +1,22 @@
+.loading-dark-container {
+    background: rgba(0, 0, 0, 0.63);
+    transition: background 0.5s ease-in-out;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.spinner-dark-icon {
+    color: #ffffff; /* Bootstrap primary color */
+    font-size: 2rem; /* Increased size */
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}

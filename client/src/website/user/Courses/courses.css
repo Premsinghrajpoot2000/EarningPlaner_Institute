@@ -1,0 +1,133 @@
+.courses_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.courses_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.courses_card {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 20px; /* Adjust as necessary */
+}
+
+.courses_link_card {
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Makes sure all cards have equal height */
+    width: 100%; /* Ensures full width */
+    max-width: 400px; /* Optional: Set a max width for cards */
+    overflow: hidden; /* Prevents overflow */
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out; /* Smooth transition for border changes */
+
+    border: 8px solid transparent; /* Transparent border for the gradient effect */
+    border-radius: 30px; /* Apply border-radius for rounded corners */
+    overflow: hidden;
+    position: relative;
+    border-image: linear-gradient(45deg, #002aff, #82c5ff) 1;
+    border-radius: 20px;
+}     
+
+@keyframes rotateBorder {
+    0% {
+        border-image: linear-gradient(45deg, #0d00fa, #82c5ff) 1;
+    }
+    25% {
+        border-image: linear-gradient(135deg, #82c5ff, #0d00fa) 1;
+    }
+    50% {
+        border-image: linear-gradient(225deg, #0d00fa, #82c5ff) 1;
+    }
+    75% {
+        border-image: linear-gradient(315deg, #82c5ff, #0d00fa) 1;
+    }
+    100% {
+        border-image: linear-gradient(45deg, #0d00fa, #82c5ff) 1;
+    }
+}
+
+.courses_link_card:hover {
+    transform: scale(1.05); /* Scale up the card on hover */
+    animation: rotateBorder 3s infinite linear; /* Triggering the animation */
+}
+
+.courses_wrapper {
+    flex-grow: 1; /* Allows the video wrapper to grow */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center contents */
+    justify-content: center; /* Center contents */
+}
+
+.course-image {
+    width: 100%; /* Ensures the image covers the entire width */
+    aspect-ratio: 16/9;
+    height: auto; /* Maintains aspect ratio */
+    max-height: 200px; /* Set a max height for images */
+    object-fit: cover; /* Ensures the image fits nicely within its container */
+}
+
+.badge {
+    position: absolute;
+    width: 100px;
+    top: 50px; /* Adjust as necessary */
+    left: -20px; /* Position it slightly outside the card */
+    background-color: rgba(0, 132, 22, 0.8); /* Color of the ribbon */
+    padding: 5px 15px;
+    border-radius: 3px;
+    font-weight: bold;
+    z-index: 1; /* Ensure it is above other elements */
+    transform: rotate(-45deg);
+    transform-origin: 0 0; /* Adjust rotation origin */
+}
+
+
+
+/* Styling for the course widgets (projects, liveSessions, assignments) */
+.course-widget {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    white-space: nowrap;
+    padding: 4px 6px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    font-size: 10px;
+    color: #555;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.course-widget i {
+    font-size: 18px;
+    color: #007bff; /* Or use color of your choice */
+}
+
+.course-widget span {
+    font-weight: bold;
+}
+
+
+@media (max-width: 767px) {
+    .courses_card {
+      width: 100%; /* Full width on mobile screens */
+    }
+  }
+  
+  /* For larger screens or multiple courses */
+  @media (min-width: 768px) {
+    .courses_card {
+      width: 33.33%; /* 3 courses per row on medium screens */
+    }
+  }

@@ -1,0 +1,66 @@
+.footer {
+    background-color: black; /* Black background */
+}
+
+.footer li a {
+    font-size: 15px;
+    color: rgb(179, 179, 179);
+    font-weight: 100;
+}
+
+.quick-links,
+.resources-links,
+.follow-us {
+    display: flex;
+    justify-content: center; /* Center the links */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin-top: 0.5rem; /* Add some margin above the links */
+}
+
+.quick-links a,
+.resources-links a,
+.follow-us a {
+    margin: 0 8px; /* Add space between links */
+    color: rgb(179, 179, 179);
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer li a {
+    text-decoration: none;
+}
+
+.footer i {
+    margin-right: 5px;
+}
+
+.footer li a:hover,
+.quick-links a:hover,
+.resources-links a:hover,
+.follow-us a:hover {
+    color: rgb(239, 239, 239);
+}
+
+.footer>div>div:last-child a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer>div>div:last-child a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.footer-logo img {
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto; /* Maintains the aspect ratio */
+    margin-top: -10px; /* Adjusts the margin if needed */
+}
+
+@media (max-width: 576px) {
+    .quick-links,
+    .resources-links,
+    .follow-us {
+        justify-content: center; /* Center in small screens */
+        margin-top: 1rem; /* Add margin for spacing */
+    }
+}

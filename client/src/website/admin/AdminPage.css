@@ -1,0 +1,29 @@
+.sideBarButton {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    border-top: 1px solid rgb(129, 129, 129);
+    border-bottom: 1px solid rgb(129, 129, 129);
+}
+
+.sideBarButton:hover {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.sideBarButton.active {
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+.AdminSidebar {
+    width: 25%;
+}
+
+
+@media (max-width: 1011px) {
+    .AdminSidebar {
+        width: 38%;
+    }
+
+}

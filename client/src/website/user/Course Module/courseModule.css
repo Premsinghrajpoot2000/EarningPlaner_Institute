@@ -1,0 +1,97 @@
+.accordion-button {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    transition: background-color 0.3s;
+}
+
+#course_module_top_details {
+    border-radius: 20px;
+    animation-name: shadow_box;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1s; /* Duration for the animation cycle */
+}
+
+@keyframes shadow_box {
+    0% {
+        box-shadow: 0px 0px 2px -2px #00ff26, inset 0px 0px 5px #2090f0; /* Outer and inner shadow */
+    }
+    100% {
+        box-shadow: 0px 0px 5px 3px #00ff26, inset 0px 0px 5px #2090f0; /* Outer and inner shadow */
+    }
+}
+
+
+#course_module_top_details p {
+    text-shadow: 0px 0px 2px white, 0px 0px 2px white, 0px 0px 2px white, 0px 0px 2px white;
+}
+
+.accordion-collapse {
+    transition: height 0.4s ease;
+}
+
+#courseModule_ul li {
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+    background-color: rgb(77, 77, 255);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+#courseModule_ul li div {
+    margin-right: 2px;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+/* Add blur effect to the background */
+.background-blur {
+    filter: blur(5px);
+    transition: filter 0.3s ease-in-out;
+}
+
+.table-like-container {
+    display: flex;
+    flex-direction: column; /* Ensures rows stack vertically */
+    gap: 15px;
+}
+
+.table-like-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 15px; /* Adds space between the cells */
+}
+
+.table-like-cell {
+    flex: 1 1 45%; /* 2 items per row for larger screens */
+    margin-bottom: 15px;
+    padding-right: 10px;
+}
+
+.table-like-cell li {
+    background: url('/course_modules_list_verified.png') no-repeat left center; /* Set the custom image as the bullet */
+    list-style-type: none;
+    padding-left: 40px; /* Adjust padding to give space between the bullet and text */
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) { /* For md screens and below */
+    .table-like-cell {
+        flex: 1 1 100%; /* 1 item per row on small screens */
+    }
+}
+
+
+.background-blur {
+    filter: blur(5px);
+    transition: filter 0.3s ease-in-out;
+}

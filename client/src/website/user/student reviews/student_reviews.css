@@ -1,0 +1,97 @@
+.student-reviews-container {
+    background-color: #ebebeb;
+    /* Light background */
+    padding: 20px;
+    /* Padding around the reviews */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+.review-slider {
+    overflow: hidden;
+    /* Hide overflow to create a sliding effect */
+    width: 80%;
+    /* Width of the review box */
+}
+
+.review-box {
+    display: flex;
+    /* Use flexbox for horizontal alignment */
+    transition: transform 0.5s ease;
+    /* Smooth transition for sliding effect */
+}
+
+.slide {
+    min-width: 100%;
+    /* Each slide takes full width */
+    box-sizing: border-box;
+    /* Ensure padding doesn't affect width */
+}
+
+.btn-circle {
+    background-color: #007bff;
+    /* Primary button color */
+    color: white;
+    /* White icon color */
+    border: none;
+    /* No border */
+    border-radius: 50%;
+    /* Circular shape */
+    width: 40px;
+    /* Width of the button */
+    height: 40px;
+    /* Height of the button */
+    display: flex;
+    /* Flexbox for centering */
+    align-items: center;
+    /* Center vertically */
+    justify-content: center;
+    /* Center horizontally */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s;
+    /* Transition for hover effect */
+}
+
+.btn-circle:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+.student-reviews-container h4 {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.student-reviews-container p {
+    font-size: 1.1em;
+    color: #555;
+    /* Dark gray text color */
+}
+
+.no-transition {
+    transition: none !important;
+    /* Disable transition */
+}
+
+
+#student_reviews video {
+    border-radius: 10px;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically, if needed */
+}
+
+.video-container {
+    max-width: 100%;
+    /* Ensure video does not overflow */
+    width: auto;
+    /* Adjust width if needed */
+}
