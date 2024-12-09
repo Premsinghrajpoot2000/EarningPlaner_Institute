@@ -1,6 +1,0 @@
-User-agent: *
-Disallow: /admin
-Disallow: /adminLogin
-Disallow: /admin/edit
-Disallow: /admin/editReviews
-Disallow: /admin/editCertificate
