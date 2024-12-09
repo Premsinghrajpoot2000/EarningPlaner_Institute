@@ -238,7 +238,6 @@ const userCoursePost = async (req, res) => {
 const userCourseEditPatch = async (req, res) => {
     const { courseId } = req.params; // Get course ID from URL parameters
     let updateData = req.body; // Get update data from the request body
-
     try {
         let updatedCourse;
 

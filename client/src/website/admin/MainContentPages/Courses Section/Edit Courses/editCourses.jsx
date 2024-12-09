@@ -147,7 +147,6 @@ function EditCourses() {
                 gifData.append('gifImage', gifImage);
                 await axios.patch(`${import.meta.env.VITE_SERVER_URL}/courses/userCourseImagesEditUploder/?imageurl=${courseData.gifImage}&userDb_id=${courseData._id}&confirm=${confirmValue}`, gifData);
             }
-
             await axios.patch(`${import.meta.env.VITE_SERVER_URL}/courses/userCourseEditPatch/${courseData._id}`, formData);
             alert('Data successfully updated!'); // Show success message
         } catch (error) {
